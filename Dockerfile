@@ -46,6 +46,6 @@ RUN rm -f /etc/gateone/ssl/key.pem && \
 
 EXPOSE 8000
 
-VOLUME ["/"]
+VOLUME ["/etc/"]
 
 CMD ["/usr/local/bin/update_and_run_gateone", "--log_file_prefix=/gateone/logs/gateone.log"]
